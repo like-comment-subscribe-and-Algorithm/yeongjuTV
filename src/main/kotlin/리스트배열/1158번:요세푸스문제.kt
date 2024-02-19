@@ -19,5 +19,9 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
         queue.removeAt(i)
     }
 
-    println(answer)
+    print("<")
+    for (i in 0 until answer.size - 1) {
+        print("${answer[i]}, ")
+    }
+    print("${answer[n - 1]}>")
 }
